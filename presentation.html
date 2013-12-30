@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="sk" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>nds | prehlad technologii pouzitych v projekte nds | od Jan Zazrivec @zazrivec</title>
+    <meta name="description" content="GRAP" />
+    <meta name="author" content="Ján Zázrivec" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/grids.css" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<slides id="impress">
+
+    <slide id="intro" class="slide step segue title-slide" data-x="0" data-y="0" data-z="0">
+        <hgroup>
+            <h1>Inkubátor projekt<br/>GRAP</h1>
+            <h2>Architektúra a technológie</h2>
+            <p>Prehľadová prezentácia</p>
+            <address>
+                <span class="name">Ján Zázrivec</span><br>
+                <a href="https://twitter.com/zazrivec" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @zazrivec</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+           </address>
+        </hgroup>
+    </slide>
+
+    <slide id="overview" class="step" data-x="0" data-y="100" data-z="1000" data-scale="2.4">
+    </slide>
+
+    <slide id="overview2" class="step" data-x="2250" data-y="1500" data-z="1000" data-scale="1.3">
+    </slide>
+
+    <slide class="slide step content" data-x="-1500" data-y="1000" data-z="0">
+        <hgroup>
+            <h2>Zákazník</h2>
+            <h3>Nadácia pre deti Slovenska</h3>
+        </hgroup>
+        <article>
+            <blockquote class="content-quote">
+                Mimovládna nezisková organizácia ktorej poslaním je podporovať všestranný rozvoj dieťaťa a mladého človeka
+            </blockquote>
+            <blockquote class="content-quote">
+                <p>Za rok 2012 sa stala Hodina deťom najznámejšou značkou v neziskovom sektore na Slovensku (prieskum Median 3-4/2012)</p>
+                <address>
+                    <a href="http://www.nds.sk">www.nds.sk</a>
+                </address>
+            </blockquote>
+        </article>
+    </slide>
+
+    <slide class="slide step" data-x="-1500" data-y="1000" data-z="-1000">
+        <hgroup>
+            <h2>Produkt</h2>
+            <h3>Čo sme mali dodať ....</h3>
+            <h3>Systém pre správu grantových programov a projektov</h3>
+        </hgroup>
+        <article>
+            <ul>
+                <li>spravovat grantové programy</li>
+                <li>spracovať, vyhodnocovať, propagovať, kontrolovať projekty</li>
+            </ul>
+            <img style="width: 100%" src="img/nadacia.png">
+        </article>
+    </slide>
+
+
+    <slide class="step slide" data-x="-1500" data-y="1000" data-z="-2000">
+        <hgroup>
+        <h2>Externá misia</h2>
+        <h3>Čo bolo dôležité pre zákazníka ...</h3>
+        </hgroup>
+        <article>
+            <ul>
+                <li>nahradiť pôvodnu aplikaciu</li>
+                <li>identifikovať problémy a nájsť riešenie</li>
+                <li>ostatné
+                    <dl>
+                        <dt>Termín(y):</dt>
+                        <dd>1.2.2013, ..., 1.10.2013</dd>
+                        <dt>Cena:</dt>
+                        <dd>300 €</dd>
+                        <dt>Pracnosť:</dt>
+                        <dd>~ 400 MD</dd>
+                    </dl>
+                </li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="-1500" data-y="1000" data-z="-3000">
+        <hgroup>
+        <h2>Interná misia</h2>
+        <h3>Čo bolo dôležité pre nás ...</h3>
+        </hgroup>
+        <article>
+            <ul>
+                <li>public relation</li>
+                <li>technology scouting: overiť a preskúmať technológie<br/>
+                    (<span class="blue">MetaSystem, HTML5, CSS3, Responsive, NoSQL</span><span class="green">, MV*, Scala, Play</span>)</li>
+                <li>predať know-how do firmy</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="0" data-y="1000" data-z="0">
+        <hgroup>
+            <h2>Doména</h2>
+        </hgroup>
+        <article>
+            <ul>
+                <li>web</li>
+                <li>štruktúrované dáta a obrazovky - dokumenty</li>
+                <li>dáta a metadáta</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="0" data-y="1000" data-z="-1000">
+        <hgroup>
+            <h2>Východisková architekúra</h2>
+        </hgroup>
+        <article>
+            <div class="pure-g-r">
+                <div class="pure-u-2-3">
+                    <ul id="tier">
+                        <li>Tapestry 5</li>
+                        <li style="padding-top: 90px;">JEE 6/ EJB, CDI, Tapestry IoC</li>
+                        <li style="padding-top: 90px;">JPA 2 / EclipseLink</li>
+                        <li style="padding-top: 90px;">DB / MySQL, MongoDB</li>
+                    </ul>
+                </div>
+                <div class="pure-u-1-3">
+                    <img src="img/4tier.png">
+                </div>
+            </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="1000" data-z="0">
+        <hgroup>
+            <h2>Technology stack</h2>
+            <h3>vrstvy</h3>
+        </hgroup>
+        <article>
+            <ul>
+                <li class="green">Prezentačná vrstva</li>
+                <li>Vrstva obchodnej logiky</li>
+                <li class="green">Dátová vrstva</li>
+                <li class="green">Dátove zdroje</li>
+            </ul>
+        </article>
+    </slide>
+
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="0">
+        <h2>Model</h2>
+        <img style="height: 100%" src="img/model.png">
+    </slide>
+
+    <slide class="step slide"data-x="1500" data-y="2000" data-z="-1000">
+        <h2>Dátove zdroje</h2>
+        <h2>NoSQL (buzzzzzz) a prečo ?</h2>
+        <div class="pure-g-r">
+            <div class="pure-u-1">
+                <img src="img/bigdata.png">
+            </div>
+            <div class="pure-u-1">
+                <ul>
+                    <li>Dáta: ukladať, spracovávať, prezentovať</li>
+                    <li>A prečo nie relačná databáza?</li>
+                </ul>
+            </div>
+        </div>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-2000">
+        <hgroup>
+            <h2>Problémy relačných DB</h2>
+        </hgroup>
+        <article>
+            <ul>
+                <li>Objem/Rýchlosť
+                    <ul>
+                        <li>Problematické horizontálne škálovanie</li>
+                        <li>HW limity na priepusnosť CPU - RAM</li>
+                    </ul>
+                </li>
+                <li>Rozmanitosť dát
+                    <ul>
+                        <li>Constraint's a transakcie</li>
+                        <li>Join v dotazoch</li>
+                        <li>Zmena databázovej schémy vs. dostupnosť</li>
+                    </ul>
+                </li>
+                <li>Náklady na škálovateľnosť</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-3000">
+        <hgroup>
+            <h2>Brewerová CAP teoréma</h2>
+        </hgroup>
+        <article>
+            <div class="pure-g-r">
+                <div class="pure-u-1-2">
+                    <ul>
+                        <li>Konzistencia každý klient ma vždy rovnaký pohľad na dáta</li>
+                        <li>Dostupnosť každý klient dokáže vždy  čítať aj zapisovať</li>
+                        <li>Particiovanie systém dokáže fungovať aj pri rozpadnutí na viacero častí</li>
+                    </ul>
+                </div>
+                <div class="pure-u-1-2">
+                    <img src="img/cap.png">
+                </div>
+            </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-4000">
+        <hgroup>
+            <h2>Brewerová CAP teoréma</h2>
+        </hgroup>
+        <article>
+            <div class="pure-g-r">
+                <div class="pure-u-1-2">
+                    <img src="img/twopills.png">
+                    <cite>pick two, neo</cite>
+                </div>
+                <div class="pure-u-1-2">
+                    <ul>
+                        <li>Distribuovaná databáza nedokáže splniť dokonale všetky 3 požiadavky</li>
+                        <li>Vybrať len dva</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-5000">
+        <hgroup>
+            <h2>NoSQL (buzzzzzz) a prečo ?</h2>
+        </hgroup>
+        <article>
+            <ul>
+                <li>Bez schémy (Schemaless)</li>
+                <li>Špecializácia na konkrétny problém</li>
+                <li>Horizontálne škálovateľné</li>
+                <li>Neexistuje spoločný dotazovací jazyk</li>
+            </ul>
+            <h2>Typy</h2>
+            <ul>
+                <li>Key/Value based</li>
+                <li>Column based</li>
+                <li>Document based</li>
+                <li>Graph based</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-6000">
+        <hgroup>
+            <h2>Dátové zdroje</h2>
+            <h3>Sumár</h3>
+        </hgroup>
+        <article>
+            <h2>NoSQL</h2>
+            <ul>
+                <li>Key/Value based - memcached</li>
+                <li>Document based - MongoDB</li>
+            </ul>
+            <h2>SQL</h2>
+            <ul>
+                <li>MySQL</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-7000">
+        <hgroup>
+            <h2>Dátová vrstva</h2>
+            <h3>Perzistencia</h3>
+        </hgroup>
+        <article>
+            <ul>
+                <li><del>EclipseLink</del>, polyglot perzistencia (ORM aj OM)</li>
+                <li>Morphia</li>
+                <li>Salat, Casbah</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-8000">
+        <hgroup>
+            <h2>Metadáta</h2>
+            <h3>Definicia programu</h3>
+        </hgroup>
+        <article>
+            <ul>
+                <li>Dáta o dátach</li>
+                <li>Silne štruktúrované</li>
+                <li>Popisujú vlastnosť dát</li>
+            </ul>
+            <h3>Použili sme</h3>
+            <ul>
+                <li>Informatívne metadata</li>
+                <li>Štrukturálne metadáta</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="1500" data-y="2000" data-z="-9000">
+        <hgroup>
+            <h2>Metadáta a NoSQL</h2>
+        </hgroup>
+        <article class="pure-g-r">
+            <div class="pure-u-1-3">
+                <ul>
+                    <li>Dáta o dátach</li>
+                    <li>Silne štruktúrované</li>
+                    <li>Popisujú vlastnosť dát</li>
+                </ul>
+            </div>
+            <div class="pure-u-2-3">
+                <img src="img/meta.png">
+            </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="0">
+        <hgroup>
+            <h2>Čo chce používateľ</h2>
+        </hgroup>
+        <article>
+            <ul>
+                <li class="blue">Služby</li>
+                <li class="blue">Zážitok z používania</li>
+                <li class="blue">Rýchlosť – odozva [Miller 1968](10s, 1s, 0.1s)</li>
+                <li>Dostupnosť v ľubovoľnom čase a na <span class="blue">ľubovoľnom zariadení</span></li>
+                <li>Bezpečnosť</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-1000">
+        <hgroup>
+            <h2>Ako na to</h2>
+            <h3>Technologické trendy</h3>
+        </hgroup>
+        <article>
+            <div class="pure-g-r">
+            <div class="pure-u-1-2">
+            <ul>
+                <li>HTML5, CSS3</li>
+                <li>Single page application</li>
+                <li>REST</li>
+                <li>Data visualization</li>
+                <li>WOA, SOAUI, SOFEA</li>
+                <li>JavaScript MV?</li>
+            </ul>
+        </div>
+        <div class="pure-u-1-2">
+            <img src="img/html5.png">
+            <img style="height: 300px" src="img/d3js.gif">
+        </div>
+        </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-2000">
+        <hgroup>
+            <h2>Ako na to</h2>
+            <h3>Vizuálne trendy</h3>
+        </hgroup>
+        <article>
+            <ul>
+                <li>Content first</li>
+                <li>Simplicity of Design Interaction and Content</li>
+                <li>Rýchlosť – odozva</li>
+                <li class="green">UX Centered design</li>
+                <li class="green">Responsive layout</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-3000">
+        <hgroup>
+            <h2>HTML5, CSS3, Responsive layout</h2>
+            <p>UI design, ktorý sa vie automaticky prispôsobiť veľkosti zobrazovacej jednotky</p>
+        </hgroup>
+        <article>
+        <ul>
+            <li>Bootstrap</li>
+            <li>Purecss.io</li>
+            <li>Foundation 3</li>
+            <li>yaml 4</li>
+        </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-4000">
+        <hgroup>
+            <h2>Podme tvoriť</h2>
+            <h3>Web framework</h3>
+        </hgroup>
+        <article>
+            <h2>Základne rozdelenie</h2>
+            <ul>
+                <li>Component based</li>
+                <li>Template / request based</li>
+                <li>SOFEA fw
+                    <ul>
+                        <li>JavaScript MVC</li>
+                        <li>Api framework</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Podľa šírky záberu</h2>
+            <ul>
+                <li>Pure web</li>
+                <li>Full stack</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-4000" data-rotate-y="90">
+        <hgroup>
+            <h2>Čo chce prevádzkovateľ</h2>
+        </hgroup>
+        <article>
+            <div class="iframe">
+                <img src="img/edit.png">
+            </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-5000">
+        <hgroup>
+            <h2>SOFEA, SOUI, WOA, ...</h2>
+        </hgroup>
+        <article>
+        <div class="pure-g-r">
+            <div class="pure-u-1-4">
+                <ul>
+                    <li>MVC na klientovi</li>
+                    <li>Napriklad Flex, Silverlight, GWT</li>
+                </ul>
+            </div>
+            <div class="pure-u-3-4">
+                <img style="width: 100%" src="img/sofea.jpg">
+            </div>
+        </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-6000">
+        <hgroup>
+            <h2>SOFEA, SOUI, WOA, ...</h2>
+        </hgroup>
+        <article>
+            <div class="pure-g-r">
+                <div class="pure-u-1-2">
+                    <h2>MV*</h2>
+                    <ul>
+                        <li><span class="green">Angular.js</span> <a href="http://angularjs.org">(http://angularjs.org)</a></li>
+                        <li>Backbone.js <a href="http://backbonejs.org">(http://backbonejs.org)</a></li>
+                        <li>Ember.js <a href="http://emberjs.com">(http://emberjs.com)</a></li>
+                        <li>Knockout.js <a href="http://knockoutjs.com">(http://knockoutjs.com)</a></li>
+                        <li>...</li>
+                        <li>vzdávam sa => <a href="http://todomvc.com">(http://todomvc.com)</a></li>
+                    </ul>
+                </div>
+                <div class="pure-u-1-2">
+                <h2>JVM API frameworks</h2>
+                    <ul>
+                        <li class="green">Jersey</li>
+                        <li>RESTEasy</li>
+                        <li class="red">Spray.io</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-7000">
+        <hgroup>
+            <h2>Propagácia</h2>
+            <h2>Prečo JEE nie je vhodné pre Internet</h2>
+        </hgroup>
+        <article>
+            <ul>
+                <li>Je predsa pre enterprise!</li>
+                <li>Chceme viac, chceme global Internet aplikácie</li>
+            </ul>
+            <ul>
+                <li>Internetové aplikácie</li>
+                <li>Lineárne horizontálne škálovanie bežne 3000 uzlov</li>
+                <li>Totalná kontrola, možnosť optimalizácií</li>
+                <li>môžme mať SOFEA</li>
+                <li>Template based vs. component based</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-8000">
+        <hgroup>
+            <h2>Play! framework</h2>
+        </hgroup>
+        <article>
+            <ul>
+                <li>Hit refresh workflow</li>
+                <li>Ne-blokujúce I/O (reaktivita -> websocket, SSE)</li>
+                <li>Stateless, template based, (fullstack || servlet deployment), restful</li>
+                <li>Evented <del>nie threaded</del></li>
+                <li>Asset compiler - pluginy (less, coffescript, typescript), napr. náš dust.js compiler</li>
+                <li>Rozsiahly ekosystém</li>
+            </ul>
+            <ul>
+                <li>1 thread na CPU jadro</li>
+                <li>ne-blokujúce IO operácie</li>
+            </ul>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-9000">
+        <hgroup>
+            <h2>Výsledná architektúra</h2>
+        </hgroup>
+        <article>
+            <div class="pure-g-r">
+                <div class="pure-u-2-3">
+                    <ul id="tier">
+                        <li>Tapestry 5, AngularJS, Play</li>
+                        <li style="padding-top: 90px;">Tapestry IoC, Model comp. a Controller</li>
+                        <li style="padding-top: 90px;">JPA 2 / Morphia OM / Salat, Cashbah</li>
+                        <li style="padding-top: 90px;">DB / MySQL, MongoDB, Memcached</li>
+                    </ul>
+                </div>
+                <div class="pure-u-1-3">
+                    <img src="img/4tier.png">
+                </div>
+            </div>
+        </article>
+    </slide>
+
+    <slide class="step slide" data-x="3000" data-y="2000" data-z="-10000">
+        <hgroup>
+        </hgroup>
+        <article>
+            <h2>Ďakujem za pozornosť</h2>
+        </article>
+    </slide>
+
+</slides>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
